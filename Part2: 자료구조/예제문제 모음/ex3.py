@@ -10,10 +10,10 @@ for _ in range(int(input())):
   if x:
     hq.heappush(pq, (abs(x), x))
   else:
-    print(hq.heappop(pq)[1] if pq else 0)
+    print(hq.heappop(pq)[1] if pq else 0) # 우리가 튜플값 중 궁금한 것은 원값이기 때문에 인덱스 1번째
     """
     if pq:
-      print(hq.heappop(pq))
+      print(hq.heappop(pq)[1])
     else:
       print(0)
     """
